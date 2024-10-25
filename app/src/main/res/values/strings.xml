@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JetpackComposable</string>
+    <string name="hello">Hey There</string>
+    <string name="welcome_back">Welcome Back</string>
+</resources>
