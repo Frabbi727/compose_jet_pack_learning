@@ -2,4 +2,7 @@
     <string name="app_name">JetpackComposable</string>
     <string name="hello">Hey There</string>
     <string name="welcome_back">Welcome Back</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="emil">Email</string>
 </resources>
