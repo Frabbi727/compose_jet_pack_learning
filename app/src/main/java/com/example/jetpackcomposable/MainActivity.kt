@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpackcomposable.app.PostOfficeApp
+import com.example.jetpackcomposable.screens.SignUpScreen
 import com.example.jetpackcomposable.ui.theme.JetpackComposableTheme
 
 class MainActivity : ComponentActivity() {
@@ -23,5 +24,11 @@ class MainActivity : ComponentActivity() {
 
         }
     }
+}
+
+@Preview
+@Composable
+fun DefaultPreview() {
+    PostOfficeApp()
 }
 

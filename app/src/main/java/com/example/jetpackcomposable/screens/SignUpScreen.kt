@@ -8,7 +8,9 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
+import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material.icons.filled.Person
+import androidx.compose.material.icons.filled.Visibility
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -20,6 +22,7 @@ import com.example.jetpackcomposable.R
 import com.example.jetpackcomposable.componen.HeadingTextComponent
 import com.example.jetpackcomposable.componen.MyTextFieldComponent
 import com.example.jetpackcomposable.componen.NormalTextComponent
+import com.example.jetpackcomposable.componen.PasswordTextFieldComponent
 
 
 @Composable
@@ -48,17 +51,23 @@ fun SignUpScreen() {
             )
             Spacer(modifier = Modifier.height(20.dp))
 
-            MyTextFieldComponent(labelValue = stringResource(id = R.string.first_name),
+            MyTextFieldComponent(
+                labelValue = stringResource(id = R.string.first_name),
                 Icons.Default.Person,
-                )
+            )
             MyTextFieldComponent(
                 labelValue = stringResource(id = R.string.last_name),
                 icon = Icons.Default.Person,
 
-            )
+                )
             MyTextFieldComponent(
                 labelValue = stringResource(id = R.string.emil),
                 icon = Icons.Default.Email
+
+            )
+            PasswordTextFieldComponent(
+                labelValue = stringResource(id = R.string.password),
+                icon =   Icons.Filled.Lock
 
             )
         }
