@@ -120,6 +120,7 @@ fun PasswordTextFieldComponent(labelValue: String, icon: ImageVector) {
             )
         },
         trailingIcon = {
+
             val iconImage = if (passwordVisible.value) {
                 Icons.Filled.VisibilityOff
             } else {
